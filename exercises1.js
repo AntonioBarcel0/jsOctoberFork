@@ -23,6 +23,12 @@ console.log(esAdultoMayor(50)); // Debería mostrar: false
 console.log("\nEjercicio 2: if-else");
 // Escribe una función llamada 'verificarTemperatura' que reciba una temperatura (°C) y devuelva 'Hace calor' si es ≥30, 'Hace frío' si es <30.
 // Datos de prueba:
+
+function verificarTemperatura(celsius){
+  if (celsius >= 30) return "hace calor";
+  else return "hace frio"
+}
+
 console.log(verificarTemperatura(32)); // Debería mostrar: 'Hace calor'
 console.log(verificarTemperatura(20)); // Debería mostrar: 'Hace frío'
 
@@ -30,6 +36,20 @@ console.log("\nEjercicio 3: if-else if");
 // Escribe una función llamada 'clasificarEdad' que reciba una edad y devuelva:
 // 'Niño' si ≤12, 'Adolescente' si 13-17, 'Adulto' si 18-64, 'Adulto mayor' si ≥65
 // Datos de prueba:
+
+function clasificarEdad(edad){
+  if (edad <= 12) {
+    return "niño";
+  } else if (edad >= 13 && edad <= 17) {
+    return "adolescente";
+  } else if(edad >= 18 && edad <= 64) {
+    return "Adulto";
+  } else {
+    return "Adulto mayor";
+  }
+}
+
+
 console.log(clasificarEdad(10)); // Debería mostrar: 'Niño'
 console.log(clasificarEdad(15)); // Debería mostrar: 'Adolescente'
 console.log(clasificarEdad(30)); // Debería mostrar: 'Adulto'
@@ -38,6 +58,20 @@ console.log(clasificarEdad(70)); // Debería mostrar: 'Adulto mayor'
 console.log("\nEjercicio 4: switch");
 // Escribe una función llamada 'obtenerColor' que reciba un número del 1 al 3 y devuelva: 1 → 'Rojo', 2 → 'Verde', 3 → 'Azul', otro → 'Color desconocido'
 // Datos de prueba:
+
+function obtenerColor(numero){
+  switch (numero){
+    case 1:
+      return "Rojo";
+    case 2:
+      return "verde";
+    case 3:
+      return "Azul";
+    default:
+      return "Color desconocido";
+  }
+}
+
 console.log(obtenerColor(1)); // Debería mostrar: 'Rojo'
 console.log(obtenerColor(3)); // Debería mostrar: 'Azul'
 console.log(obtenerColor(5)); // Debería mostrar: 'Color desconocido'
@@ -45,12 +79,26 @@ console.log(obtenerColor(5)); // Debería mostrar: 'Color desconocido'
 console.log("\nEjercicio 5: Condicional ternario");
 // Escribe una función llamada 'esPositivo' que reciba un número y devuelva 'Positivo' si ≥0, 'Negativo' si <0
 // Datos de prueba:
+
+function esPositivo(numero){
+  return numero >= 0 ? "Positivo" : "Negativo";
+}
+
 console.log(esPositivo(5));  // Debería mostrar: 'Positivo'
 console.log(esPositivo(-3)); // Debería mostrar: 'Negativo'
 
 console.log("\nEjercicio 6: Combinación de condicionales");
 // Escribe una función llamada 'puedeVotar' que reciba edad y nacionalidad ('sí' o 'no') y devuelva true si edad ≥18 y nacionalidad 'sí', false en caso contrario
 // Datos de prueba:
+
+function puedeVotar(edad, nacionalidad){
+  if (edad >= 18 && nacionalidad === "si"){
+    return true
+  } else {
+    return false
+  }
+}
+
 console.log(puedeVotar(20, 'sí'));  // Debería mostrar: true
 console.log(puedeVotar(16, 'sí'));  // Debería mostrar: false
 console.log(puedeVotar(25, 'no'));  // Debería mostrar: false
