@@ -11,6 +11,12 @@
 console.log("Ejercicio 1: if simple");
 // Escribe una función llamada 'esAdultoMayor' que reciba una edad y devuelva true si es mayor de 65, false en caso contrario.
 // Datos de prueba:
+
+function esAdultoMayor(edad) {
+  if (edad > 65) return true;
+  else return false
+}
+
 console.log(esAdultoMayor(70)); // Debería mostrar: true
 console.log(esAdultoMayor(50)); // Debería mostrar: false
 
