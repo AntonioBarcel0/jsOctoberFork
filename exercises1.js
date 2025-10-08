@@ -264,10 +264,10 @@ console.log("\nEjercicio 19: Combinación map + forEach");
 // Datos de prueba:
 
 const salarios = empleados.map(e => e.salario);
-console.log(`Las edades son: [${salarios}]`);
+console.log(`Los salarios son: [${salarios}]`);
 let sumaTotal = 0;
 salarios.forEach(s => sumaTotal += s);
-console.log(`La suma de todas las edades es: ${sumaTotal}`);
+console.log(`La suma de todas los salarios es: ${sumaTotal}`);
 
 // Salarios: 1200, 1500
 // Debería imprimir:
