@@ -442,7 +442,7 @@ function promediarEdades(personas) {
   return suma / edades.length;
 }
 
-console.log(promediarEdades(grupo)); // Debería mostrar: 28.333333333333332
+console.log(promediarEdades(grupo)); // Debería mostrar: 28.3333333333333332
 
 
 
